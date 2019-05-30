@@ -1,5 +1,7 @@
 {
   "name": "chapter7-web-service-integration",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

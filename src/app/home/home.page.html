@@ -7,8 +7,15 @@
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <ion-list>
+    <ion-item *ngFor="let photo of list; let i = index">
+      <ion-avatar>
+        <img src="{{photo.url}}" alt="{{i}}">
+      </ion-avatar>
+      <strong>id</strong>: {{photo.id}} <br>
+      <strong>title</strong>: {{photo.title}} <br>
+      <strong>thumbnailUrl</strong>: {{photo.thumbnailUrl}} <br>
+    </ion-item>
+  </ion-list>
+
 </ion-content>
